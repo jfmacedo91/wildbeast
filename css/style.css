@@ -15,7 +15,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 0.25rem;
 }
 
 .layout {
@@ -99,8 +101,16 @@ main {
 
 .ads {
   grid-area: ads;
+  display: grid;
+  align-content: start;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 footer {
   grid-area: footer;
+  padding: 2rem;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #15803D, #16A34A);
 }
