@@ -26,6 +26,7 @@ img {
     "sidenav main ads"
     "footer footer footer"
   ;
+  background-color: #f8fAfC;
 }
 
 header {
@@ -63,7 +64,33 @@ header .primary-menu a:hover {
 
 .sidenav {
   grid-area: sidenav;
-  
+  padding: 2rem;
+}
+
+.sidenav ul {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.sidenav a {
+  display: block;
+  width: fit-content;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 7px 15px -2px #0F172A20;
+  transition: all 200ms;
+}
+
+.sidenav a:hover {
+  background-color: #4ADE80;
+}
+
+.sidenav a img {
+  width: 100%;
+  min-width: 3.75rem;
+  max-width: 6.25rem;
 }
 
 main {
