@@ -2,8 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Vollkorn', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-  max-height: 100px;
+  max-width: 100%;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) 3fr 18rem;
+  grid-template-areas:
+    "header header header"
+    "sidenav main ads"
+    "footer footer footer"
+  ;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: linear-gradient(135deg, #15803D, #16A34A);
+  padding: 2rem;
+}
+
+header .logo {
+  max-width: 12.5rem;
+}
+
+header .primary-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+header .primary-menu a {
+  display: block;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #14532D40;
+  transition: all 200ms;
+}
+
+header .primary-menu a:hover {
+  background-color: #14532D80;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  
+}
+
+main {
+  grid-area: main;
+}
+
+.ads {
+  grid-area: ads;
+}
+
+footer {
+  grid-area: footer;
 }
