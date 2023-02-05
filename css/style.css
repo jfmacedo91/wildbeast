@@ -16,8 +16,9 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   border-radius: 0.25rem;
+  align-self: end;
 }
 
 .layout {
@@ -28,7 +29,6 @@ img {
     "sidenav main ads"
     "footer footer footer"
   ;
-  background-color: #f8fAfC;
 }
 
 header {
@@ -67,6 +67,7 @@ header .primary-menu a:hover {
 .sidenav {
   grid-area: sidenav;
   padding: 2rem;
+  background-color: #f8fAfC;
 }
 
 .sidenav ul {
@@ -97,6 +98,111 @@ header .primary-menu a:hover {
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #FFFFFF;
+}
+
+.col-wide {
+  grid-column: 1/-1;
+}
+
+.row2 {
+  grid-row: span 2;
+}
+
+main p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: #64748B;
+}
+
+main .information p + p {
+  margin-top: 2rem;
+}
+
+main .title {
+  color: #16A34A;
+}
+
+main .title h1 {
+  font-size: 3.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+main .title span {
+  font-size: 0.875rem;
+  font-style: italic;
+  letter-spacing: 0.05rem;
+}
+
+main .particulars {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+main .attribute {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  border-radius: 0.25rem;
+  color: #14532D;
+  box-shadow: 0 7px 15px -2px #0F172A20;
+  overflow: hidden;
+}
+
+main .attribute .number {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, #15803D, #16A34A);
+}
+
+main .attribute .label {
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+main .contraste {
+  max-width: 16rem;
+  font-size: 0.875rem;
+  color: #15803D;
+}
+
+main .quote,
+main .attributes {
+  align-self: start;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(135deg, #15803D, #16A34A);
+  box-shadow: 0 7px 15px -2px #0F172A20;
+}
+
+main .quote p {
+  max-width: 35ch;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .attributes li {
+  padding: 1rem;
+  font-family: 'Chivo Mono', monospace;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+main .attributes li + li {
+  border-top: 2px solid #16A34A;
 }
 
 .ads {
@@ -105,12 +211,14 @@ main {
   align-content: start;
   padding: 2rem;
   gap: 2rem;
+  background-color: #F8FAFC;
 }
 
 footer {
   grid-area: footer;
   padding: 2rem;
   font-size: 1.125rem;
+  text-align: center;
   color: #FFFFFF;
   background: linear-gradient(135deg, #15803D, #16A34A);
 }
