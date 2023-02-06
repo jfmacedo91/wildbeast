@@ -31,6 +31,30 @@ img {
   ;
 }
 
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-areas:
+      "header header header"
+      "sidenav main main"
+      "sidenav ads ads"
+      "footer footer footer"
+    ;
+  }
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "main"
+      "ads"
+      "footer"
+    ;
+  }
+}
+
 header {
   grid-area: header;
   display: grid;
@@ -64,6 +88,17 @@ header .primary-menu a:hover {
   background-color: #14532D80;
 }
 
+@media (max-width: 760px) {
+  header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  header .primary-menu {
+    gap: 1rem;
+  }
+}
+
 .sidenav {
   grid-area: sidenav;
   padding: 2rem;
@@ -94,6 +129,39 @@ header .primary-menu a:hover {
   width: 100%;
   min-width: 3.75rem;
   max-width: 6.25rem;
+}
+
+@media (max-width: 760px) {
+  .sidenav {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #64748B;
+    animation: arrow 500ms ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@keyframes arrow {
+  from {
+    right: 1rem;
+  }
+
+  to {
+    right: 0.5rem;
+  }
 }
 
 main {
