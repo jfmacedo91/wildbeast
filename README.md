@@ -3,10 +3,10 @@
 <p align="center"></p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/jfmacedo91/wildbeast/main?color=%15803D&style=plastic" />
-  <img src="https://img.shields.io/github/languages/count/jfmacedo91/wildbeast?color=%15803D&style=plastic" />
-  <img src="https://img.shields.io/github/languages/top/jfmacedo91/wildbeast?color=%15803D&style=plastic" />
-  <img src="https://img.shields.io/github/languages/code-size/jfmacedo91/wildbeast?color=%15803D&style=plastic" />
+  <img src="https://img.shields.io/github/last-commit/jfmacedo91/wildbeast/main?color=%15803D" />
+  <img src="https://img.shields.io/github/languages/count/jfmacedo91/wildbeast?color=%15803D" />
+  <img src="https://img.shields.io/github/languages/top/jfmacedo91/wildbeast?color=%15803D" />
+  <img src="https://img.shields.io/github/languages/code-size/jfmacedo91/wildbeast?color=%15803D" />
 </p>
 
 <p align="center">
@@ -33,5 +33,5 @@ Projeto desenvolvido durante o curso de grid layout da Origamid
 
 ## 💚 Feito por Jean Fernandes de Macedo
 
-[![Linkedin Badge](https://img.shields.io/badge/-Jean%20Fernandes%20de%20Macedo-0077B5?style=plastic&logo=Linkedin&link=https://www.linkedin.com/in/jean-fernandes-de-macedo-b843a3194/)](https://www.linkedin.com/in/jfmacedo91/)
-[![Gmail Badge](https://img.shields.io/badge/-jfmacedo91@gmail.com-c14438?style=plastic&logo=Gmail&logoColor=white&link=mailto:jfmacedo91@gmail.com)](mailto:jfmacedo91@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Jean%20Fernandes%20de%20Macedo-0077B5?logo=Linkedin&link=https://www.linkedin.com/in/jean-fernandes-de-macedo-b843a3194/)](https://www.linkedin.com/in/jfmacedo91/)
+[![Gmail Badge](https://img.shields.io/badge/-jfmacedo91@gmail.com-c14438?logo=Gmail&logoColor=white&link=mailto:jfmacedo91@gmail.com)](mailto:jfmacedo91@gmail.com)
